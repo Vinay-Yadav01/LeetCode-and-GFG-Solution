@@ -9,7 +9,7 @@ public:
         while(s<=e){
             int element = matrix[mid/col][mid%col];
             if(element==target){
-                return 1;
+                return true;
             }
             else if(element<target){
                 s=mid+1;
@@ -19,6 +19,6 @@ public:
             }
             mid=s+(e-s)/2;
         }
-        return 0;
+        return false;
     }
 };
