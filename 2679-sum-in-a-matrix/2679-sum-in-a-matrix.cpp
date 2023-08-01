@@ -9,7 +9,6 @@ public:
             }
         }
         nums[row][index]=0;
-        cout<<maximum<<" ";
         return maximum;
     }
     int matrixSum(vector<vector<int>>& nums) {
@@ -23,7 +22,6 @@ public:
                 if(maximum < maxRow ) maximum = maxRow;                
             }
             ans+=maximum;
-            cout<<endl;
         }
         return ans;
     }
